@@ -15,9 +15,8 @@ st.write(df2)
 
 st.markdown("Display Ambulatory Payment Classification")
 
+apc_data = df2["apc"].value_counts()
 
-average_total_payments = df2["average_total_paymeents"].value_counts()
-
-st.bar_chart(df2)
+st.bar_chart(apc_data)
 
 
