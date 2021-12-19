@@ -21,7 +21,7 @@ st.bar_chart(apc_data)
 
 st.markdown("Display Diagnosis Related Groups")
 
-drgs_data = df1["drg_definition"].value_counts()
+drgs_data = df1["drg_definition"].value_counts(25)
 
 
 st.bar_chart(drgs_data)
