@@ -10,7 +10,7 @@ df1 = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_5
 df2 = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_507/main/Deployment_Streamlit/outpatient_2015.csv")
 
 st.write(df, 25,25)
-st.write(df1, 25,25
+st.write(df1, 25,25)
 st.write(df2, 25,25)
 
 st.markdown("Display Ambulatory Payment Classification")
