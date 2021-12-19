@@ -9,9 +9,9 @@ df = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_50
 df1 = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_507/main/Deployment_Streamlit/inpatient_2015.csv")
 df2 = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_507/main/Deployment_Streamlit/outpatient_2015.csv")
 
-st.write(df)
-st.write(df1)
-st.write(df2)
+st.write(df, 50,50)
+st.write(df1, 50,50)
+st.write(df2, 50,50)
 
 st.markdown("Display Ambulatory Payment Classification")
 
@@ -19,4 +19,9 @@ apc_data = df2["apc"].value_counts()
 
 st.bar_chart(apc_data)
 
+st.markdown("Display Diagnosis Related Groups")
 
+drgs_data = df1["drgs_definition"].value_counts()
+
+
+st.bar_chart(drgs_data)
