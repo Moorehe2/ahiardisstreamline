@@ -16,7 +16,7 @@ st.dataframe(df2)
 
 
 st.subheader ('Outpatient Ambulatory Payment Classification(APC) in Stony Brook University Hospital')
-dataframe_pivot = df2.pivot_table(index=['state','city'],values = 'average_total_payments'],aggfunc ='mean')
+dataframe_pivot = df2.pivot_table(index=['state','city'],values = ['average_total_payments'],aggfunc ='mean')
 
 st.text("Comparison of Diagnosis Related Groups (DRGs) at Stony Brook Hospital and Montefiore Medical Center")
 st.text(VISUALIZATION)
