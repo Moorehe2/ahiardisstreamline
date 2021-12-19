@@ -16,8 +16,8 @@ st.dataframe(df2)
 
 st.text("Comparison of Stony Brook Hospital and Bronx Lebanon Hospital, Montefiore Medical Center and St. Barnabas Hospital")
 
-st.subheader ('Outpatient APC' in Stony Brook University Hospital')
-dataframe _pivot = df2.pivot_table(index= ['Stony Brook'], values = ['average_total_payments'], aggfunc = ['mean'])
+st.subheader ('Outpatient Ambulatory Payment Classification(APC) in Stony Brook University Hospital')
+dataframe_pivot = df2.pivot_table(index= ['Stony Brook'], values = ['average_total_payments'], aggfunc = ['mean'])
 
 st.text ("Comparison of Diagnosis Related Groups (DRGs) at Stony Brook Hospital and Montefiore Medical Centerl_name', columns = 'drg_definition', values = 'average_covered_charges'))
 
