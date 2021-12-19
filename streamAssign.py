@@ -13,7 +13,6 @@ st.write(df, 25,25)
 st.write(df1, 25,25)
 st.write(df2, 25,25)
 
-st.area_chart(df)
 
 st.markdown("Display Ambulatory Payment Classification")
 
