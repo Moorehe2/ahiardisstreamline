@@ -25,7 +25,12 @@ st.markdown("Display Diagnosis Related Groups")
 drg_data = df1["drg_definition"].value_counts(10)
 
 
-st.line_chart(drg_data)
+df = pd.DataFrame(np.random.randn(10, 5),
+  columns = ('col %d' % i
+    for i in range(5)))
+df
+st.write('This is a line_chart.')
+st.line_chart(df)
 
-st.area_chart(drg_data)
+
 
