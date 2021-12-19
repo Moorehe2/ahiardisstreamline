@@ -13,6 +13,8 @@ st.write(df, 25,25)
 st.write(df1, 25,25)
 st.write(df2, 25,25)
 
+st.area_chart(df)
+
 st.markdown("Display Ambulatory Payment Classification")
 
 apc_data = df2["apc"].value_counts()
@@ -24,6 +26,5 @@ st.markdown("Display Diagnosis Related Groups")
 drg_data = df1["drg_definition"].value_counts(10)
 
 
-st.bar_chart(drg_data)
+st.line_chart(drg_data)
 
-st.table("hospital_name", "apc", "drg_definition")
