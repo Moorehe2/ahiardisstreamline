@@ -27,3 +27,5 @@ drg_data = df1["drg_definition"].value_counts(10)
 
 st.line_chart(drg_data)
 
+st.area_chart(drg_data)
+
