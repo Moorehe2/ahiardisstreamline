@@ -15,10 +15,10 @@ st.dataframe(df2)
 
 
 st.text("Comparison of Stony Brook Hospital and Bronx Lebanon Hospital, Montefiore Medical Center and St. Barnabas Hospital")
-st.code(Results.pivot(index ='provider_name', columns = 'apc', values = 'average_total_payments'))
 
-st.text ("Comparison of Diagnosis Related Groups (DRGs) at Stony Brook Hospital and Montefiore Medical Center")
+st.subheader ('Outpatient APC' in Stony Brook University Hospital')
+dataframe _pivot = df2.pivot_table(index= ['Stony Brook'], values = ['average_total_payments'], aggfunc = ['mean'])
 
-st.code(OResults.pivot(index = 'hospital_name', columns = 'drg_definition', values = 'average_covered_charges'))
+st.text ("Comparison of Diagnosis Related Groups (DRGs) at Stony Brook Hospital and Montefiore Medical Centerl_name', columns = 'drg_definition', values = 'average_covered_charges'))
 
 st.text(VISUALIZATION)
