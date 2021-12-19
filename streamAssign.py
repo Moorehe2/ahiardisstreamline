@@ -9,14 +9,14 @@ df = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_50
 df1 = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_507/main/Deployment_Streamlit/inpatient_2015.csv")
 df2 = pd.read_csv("https://raw.githubusercontent.com/hantswilliams/AHI_DataSci_507/main/Deployment_Streamlit/outpatient_2015.csv")
 
-st.dataframe(df).sample(10)
-st.dataframe(df1).sample(10)
-st.dataframe(df2).sample(10)
+st.dataframe(df)
+st.dataframe(df1)
+st.dataframe(df2)
 
 
 
 st.subheader ('Outpatient Ambulatory Payment Classification(APC) in Stony Brook University Hospital')
-dataframe_pivot = df2.pivot_table(index= ['state', 'city'], values = ['average_total_payments'], aggfunc = ['mean'])
+dataframe_pivot = df2.pivot_table(index= ['state','city'], values = ['average_total_payments'], aggfunc = ['mean'])
 
 st.text("Comparison of Diagnosis Related Groups (DRGs) at Stony Brook Hospital and Montefiore Medical Center")
 st.text(VISUALIZATION)
